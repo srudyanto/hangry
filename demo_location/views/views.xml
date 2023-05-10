@@ -1,0 +1,15 @@
+<odoo>
+  <data>
+    <record id="view_location_form_inherit" model="ir.ui.view">
+      <field name="name">view.location.form.inherit</field>
+      <field name="model">stock.location</field>
+      <field name="inherit_id" ref="stock.view_location_form"/>
+      <field name="arch" type="xml">
+        <xpath expr="//group" position="before">
+          <label for="manager_id"/>
+          <h2><field name="manager_id" placeholder="e.g. John Doe" options="{'no_create':True}"/></h2>
+        </xpath>
+      </field>
+    </record>
+  </data>
+</odoo>
